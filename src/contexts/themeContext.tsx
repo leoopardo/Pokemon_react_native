@@ -10,6 +10,9 @@ type ThemeProviderType = {
     menu: any;
     menuItemColor: any;
     menuTxtColor: any;
+    text_s: any;
+    text_m: any;
+    text_g: any;
   };
   setDarkTheme: () => void;
   setLightTheme: () => void;
@@ -30,6 +33,18 @@ const ThemeProvider = ({ children }: any) => {
       fontSize: 30,
       color: default_style.BLUE_WHITE,
     },
+    text_s: {
+      fontSize: 14,
+      color: default_style.BLUE_WHITE,
+    },
+    text_m: {
+      fontSize: 16,
+      color: default_style.BLUE_WHITE,
+    },
+    text_g: {
+      fontSize: 20,
+      color: default_style.BLUE_WHITE,
+    },
     menuItemColor: default_style.BLUE_WHITE,
     menuTxtColor: default_style.BLUE700,
     menu: {
@@ -40,6 +55,18 @@ const ThemeProvider = ({ children }: any) => {
     theme: "light",
     text: {
       fontSize: 30,
+      color: "black",
+    },
+    text_s: {
+      fontSize: 14,
+      color: "black",
+    },
+    text_m: {
+      fontSize: 16,
+      color: "black",
+    },
+    text_g: {
+      fontSize: 20,
       color: "black",
     },
     container: {
